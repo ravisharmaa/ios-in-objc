@@ -7,6 +7,7 @@
 
 #import "SceneDelegate.h"
 #import "ListCollectionViewController.h"
+#import "ViewController.h"
 
 @interface SceneDelegate ()
 
@@ -21,7 +22,7 @@
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     _window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
     
-    UIViewController *viewController = [[ListCollectionViewController alloc] init];
+    UIViewController *viewController = [[ViewController alloc] init];
     
     _window.rootViewController = [[UINavigationController alloc] initWithRootViewController:viewController ];
     

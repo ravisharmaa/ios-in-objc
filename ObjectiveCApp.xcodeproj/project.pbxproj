@@ -17,6 +17,7 @@
 		D50EAACD254A52FB00698CBB /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = D50EAACC254A52FB00698CBB /* List.m */; };
 		D50EAAD2254A725200698CBB /* ListCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50EAAD1254A725200698CBB /* ListCollectionViewController.m */; };
 		D5560245254B1C06002CC9EF /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5560244254B1C06002CC9EF /* CustomCollectionViewCell.m */; };
+		D58F583C254D847500C91760 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D58F583B254D847500C91760 /* NetworkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		D50EAAD1254A725200698CBB /* ListCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListCollectionViewController.m; sourceTree = "<group>"; };
 		D5560243254B1C06002CC9EF /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CustomCollectionViewCell.h; path = Cells/CustomCollectionViewCell.h; sourceTree = "<group>"; };
 		D5560244254B1C06002CC9EF /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CustomCollectionViewCell.m; path = Cells/CustomCollectionViewCell.m; sourceTree = "<group>"; };
+		D58F583A254D847500C91760 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		D58F583B254D847500C91760 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				D50EAACC254A52FB00698CBB /* List.m */,
 				D50EAAD0254A725200698CBB /* ListCollectionViewController.h */,
 				D50EAAD1254A725200698CBB /* ListCollectionViewController.m */,
+				D58F583A254D847500C91760 /* NetworkManager.h */,
+				D58F583B254D847500C91760 /* NetworkManager.m */,
 			);
 			path = ObjectiveCApp;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 				D50EAACD254A52FB00698CBB /* List.m in Sources */,
 				D50EAAC32549853A00698CBB /* CustomTableViewCell.m in Sources */,
 				D50EAA9025494BEA00698CBB /* SceneDelegate.m in Sources */,
+				D58F583C254D847500C91760 /* NetworkManager.m in Sources */,
 				D5560245254B1C06002CC9EF /* CustomCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
