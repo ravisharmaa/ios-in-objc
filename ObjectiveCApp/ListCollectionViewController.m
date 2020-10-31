@@ -8,15 +8,15 @@
 #import "ListCollectionViewController.h"
 #import "CustomCollectionViewCell.h"
 
-@interface ListCollectionViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface ListCollectionViewController () <UICollectionViewDelegate>
 
 @end
 
 @implementation ListCollectionViewController
 
-@synthesize collectionView = _collectionView;
-@synthesize dataSource = _dataSource;
-
+typedef NS_ENUM(int, Section) {
+    main
+};
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,7 +28,6 @@
     [self.view addSubview:_collectionView];
     
     _collectionView.delegate = self;
-    _collectionView.dataSource = self;
     _collectionView.backgroundColor = [UIColor systemBackgroundColor];
     
     [_collectionView registerClass: CustomCollectionViewCell.class forCellWithReuseIdentifier:@"reuseMe"];
@@ -40,6 +39,9 @@
     [_collectionView.leadingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.leadingAnchor].active = YES;
     [_collectionView.trailingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.trailingAnchor].active = YES;
     [_collectionView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor].active = YES;
+    
+
+    [self configureDataSource];
     
     
 }
@@ -73,18 +75,17 @@
     _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
 }
 
-
-- (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    CustomCollectionViewCell *cell = [ collectionView dequeueReusableCellWithReuseIdentifier:@"reuseMe" forIndexPath:indexPath ];
+- (void) configureDataSource {
+    _dataSource = [[UICollectionViewDiffableDataSource alloc] initWithCollectionView:_collectionView cellProvider:^UICollectionViewCell * _Nullable(UICollectionView * collectionView, NSIndexPath * indexPath, id identifier) {
+        CustomCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"reuseMe" forIndexPath:indexPath];
+        
+        return cell;
+    }];
     
-    cell.backgroundColor = [UIColor redColor];
     
-    cell.layer.cornerRadius = 8;
     
-    cell.clipsToBounds = YES;
-    
-    return cell;
 }
+
 
 - (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return 10;

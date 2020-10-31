@@ -9,4 +9,15 @@
 
 @implementation CustomCollectionViewCell
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.backgroundColor = [UIColor greenColor];
+    }
+    return self;
+}
+
 @end
+
+

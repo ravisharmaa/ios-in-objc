@@ -18,8 +18,6 @@
 
 @implementation ViewController
 
-@synthesize customTableView = _customTableView;
-
 - (void) viewDidLoad {
     
     [super viewDidLoad];
