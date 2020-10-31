@@ -10,7 +10,7 @@
 #import "List.h"
 
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray <List *> *lists;
 
@@ -21,6 +21,7 @@
 @synthesize customTableView = _customTableView;
 
 - (void) viewDidLoad {
+    
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor systemBackgroundColor];
@@ -34,6 +35,8 @@
     [self fetchData];
     
 }
+
+#pragma mark - Table View Config
 
 - (void) configureTableView  {
     
@@ -119,6 +122,10 @@
     
     [dataTask resume];
     
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"%@", indexPath);
 }
 
 

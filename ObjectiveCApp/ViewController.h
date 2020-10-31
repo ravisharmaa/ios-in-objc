@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface ViewController : UIViewController
 
 @property (nonatomic, strong) UITableView *customTableView;
 
