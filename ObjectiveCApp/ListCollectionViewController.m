@@ -7,16 +7,22 @@
 
 #import "ListCollectionViewController.h"
 #import "CustomCollectionViewCell.h"
+#import "Section.h"
+
 
 @interface ListCollectionViewController () <UICollectionViewDelegate>
+
+
+@property (nonatomic, strong) UICollectionViewDiffableDataSource  *dataSource;
+
+@property (nonatomic, strong) UICollectionView *collectionView;
+
+@property (nonatomic, strong) NSMutableArray<Section *> *sectionArray;
 
 @end
 
 @implementation ListCollectionViewController
 
-typedef NS_ENUM(int, Section) {
-    main
-};
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,16 +39,14 @@ typedef NS_ENUM(int, Section) {
     [_collectionView registerClass: CustomCollectionViewCell.class forCellWithReuseIdentifier:@"reuseMe"];
     
     
+    [self configureDataSource];
+    
     _collectionView.translatesAutoresizingMaskIntoConstraints = NO;
     
     [_collectionView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor].active = YES;
     [_collectionView.leadingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.leadingAnchor].active = YES;
     [_collectionView.trailingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.trailingAnchor].active = YES;
     [_collectionView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor].active = YES;
-    
-
-    [self configureDataSource];
-    
     
 }
 
@@ -76,20 +80,35 @@ typedef NS_ENUM(int, Section) {
 }
 
 - (void) configureDataSource {
-    _dataSource = [[UICollectionViewDiffableDataSource alloc] initWithCollectionView:_collectionView cellProvider:^UICollectionViewCell * _Nullable(UICollectionView * collectionView, NSIndexPath * indexPath, id identifier) {
+    
+    self.dataSource = [[UICollectionViewDiffableDataSource alloc] initWithCollectionView:_collectionView cellProvider:^UICollectionViewCell * _Nullable(UICollectionView * collectionView, NSIndexPath * indexPath, id identifier) {
+        
         CustomCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"reuseMe" forIndexPath:indexPath];
         
+        cell.backgroundColor = [UIColor redColor];
+
         return cell;
     }];
+
+    NSDiffableDataSourceSnapshot *snapshot = [[NSDiffableDataSourceSnapshot alloc] init];
+
+    NSArray *items = @[@1, @2, @3, @4, @5];
+
     
+    _sectionArray = [[NSMutableArray alloc] init];
     
+    Section *section = [[Section alloc] init];
+    
+    section.name = @"main";
+    
+    [self.sectionArray addObject:section];
+    
+    [snapshot appendSectionsWithIdentifiers: _sectionArray];
+    
+    [snapshot appendItemsWithIdentifiers:items];
+
+    [_dataSource applySnapshot:snapshot animatingDifferences:YES];
     
 }
-
-
-- (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 10;
-}
-
 
 @end
