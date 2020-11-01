@@ -20,6 +20,8 @@
 		D50EAAD2254A725200698CBB /* ListCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50EAAD1254A725200698CBB /* ListCollectionViewController.m */; };
 		D5560245254B1C06002CC9EF /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5560244254B1C06002CC9EF /* CustomCollectionViewCell.m */; };
 		D58F583C254D847500C91760 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D58F583B254D847500C91760 /* NetworkManager.m */; };
+		D5CFCF3A254EDFBE005BABB1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D5CFCF39254EDFBE005BABB1 /* README.md */; };
+		D5CFCF3D254EE114005BABB1 /* AppStore.gif in Resources */ = {isa = PBXBuildFile; fileRef = D5CFCF3C254EE114005BABB1 /* AppStore.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		D5560244254B1C06002CC9EF /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CustomCollectionViewCell.m; path = Cells/CustomCollectionViewCell.m; sourceTree = "<group>"; };
 		D58F583A254D847500C91760 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		D58F583B254D847500C91760 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		D5CFCF39254EDFBE005BABB1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D5CFCF3C254EE114005BABB1 /* AppStore.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AppStore.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 		D50EAA7F25494BEA00698CBB = {
 			isa = PBXGroup;
 			children = (
+				D5CFCF3C254EE114005BABB1 /* AppStore.gif */,
+				D5CFCF39254EDFBE005BABB1 /* README.md */,
 				D50EAA8A25494BEA00698CBB /* ObjectiveCApp */,
 				D50EAA8925494BEA00698CBB /* Products */,
 			);
@@ -220,7 +226,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5CFCF3A254EDFBE005BABB1 /* README.md in Resources */,
 				D50EAA9B25494BEE00698CBB /* LaunchScreen.storyboard in Resources */,
+				D5CFCF3D254EE114005BABB1 /* AppStore.gif in Resources */,
 				D50EAA9825494BEE00698CBB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
