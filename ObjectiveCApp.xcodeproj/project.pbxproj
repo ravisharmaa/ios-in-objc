@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		222DB736254E8FCC00F7F7DF /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DB735254E8FCC00F7F7DF /* Section.m */; };
+		222DB73E254E9F5A00F7F7DF /* MultipleSectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DB73D254E9F5A00F7F7DF /* MultipleSectionsViewController.m */; };
 		D50EAA8D25494BEA00698CBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D50EAA8C25494BEA00698CBB /* AppDelegate.m */; };
 		D50EAA9025494BEA00698CBB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D50EAA8F25494BEA00698CBB /* SceneDelegate.m */; };
 		D50EAA9325494BEA00698CBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50EAA9225494BEA00698CBB /* ViewController.m */; };
@@ -24,6 +25,8 @@
 /* Begin PBXFileReference section */
 		222DB734254E8FCC00F7F7DF /* Section.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
 		222DB735254E8FCC00F7F7DF /* Section.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
+		222DB73C254E9F5A00F7F7DF /* MultipleSectionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultipleSectionsViewController.h; sourceTree = "<group>"; };
+		222DB73D254E9F5A00F7F7DF /* MultipleSectionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleSectionsViewController.m; sourceTree = "<group>"; };
 		D50EAA8825494BEA00698CBB /* ObjectiveCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50EAA8B25494BEA00698CBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D50EAA8C25494BEA00698CBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,6 +68,8 @@
 				D50EAA9225494BEA00698CBB /* ViewController.m */,
 				D50EAAD0254A725200698CBB /* ListCollectionViewController.h */,
 				D50EAAD1254A725200698CBB /* ListCollectionViewController.m */,
+				222DB73C254E9F5A00F7F7DF /* MultipleSectionsViewController.h */,
+				222DB73D254E9F5A00F7F7DF /* MultipleSectionsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				D50EAA9E25494BEE00698CBB /* main.m in Sources */,
 				D50EAACD254A52FB00698CBB /* List.m in Sources */,
 				D50EAAC32549853A00698CBB /* CustomTableViewCell.m in Sources */,
+				222DB73E254E9F5A00F7F7DF /* MultipleSectionsViewController.m in Sources */,
 				D50EAA9025494BEA00698CBB /* SceneDelegate.m in Sources */,
 				D58F583C254D847500C91760 /* NetworkManager.m in Sources */,
 				D5560245254B1C06002CC9EF /* CustomCollectionViewCell.m in Sources */,

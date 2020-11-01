@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Section : NSObject 
+@interface Section : NSObject
 
 @property (nonatomic, strong) NSString *name;
 
