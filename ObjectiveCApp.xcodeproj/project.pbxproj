@@ -58,6 +58,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222DB737254E9E3E00F7F7DF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D50EAA9125494BEA00698CBB /* ViewController.h */,
+				D50EAA9225494BEA00698CBB /* ViewController.m */,
+				D50EAAD0254A725200698CBB /* ListCollectionViewController.h */,
+				D50EAAD1254A725200698CBB /* ListCollectionViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		222DB738254E9E4800F7F7DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D50EAACB254A52FB00698CBB /* List.h */,
+				D50EAACC254A52FB00698CBB /* List.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		222DB739254E9E4F00F7F7DF /* DiffableSections */ = {
+			isa = PBXGroup;
+			children = (
+				222DB734254E8FCC00F7F7DF /* Section.h */,
+				222DB735254E8FCC00F7F7DF /* Section.m */,
+			);
+			path = DiffableSections;
+			sourceTree = "<group>";
+		};
+		222DB73A254E9E7D00F7F7DF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D58F583A254D847500C91760 /* NetworkManager.h */,
+				D58F583B254D847500C91760 /* NetworkManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		222DB73B254E9E9E00F7F7DF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D50EAA8B25494BEA00698CBB /* AppDelegate.h */,
+				D50EAA8C25494BEA00698CBB /* AppDelegate.m */,
+				D50EAA8E25494BEA00698CBB /* SceneDelegate.h */,
+				D50EAA8F25494BEA00698CBB /* SceneDelegate.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		D50EAA7F25494BEA00698CBB = {
 			isa = PBXGroup;
 			children = (
@@ -77,25 +126,16 @@
 		D50EAA8A25494BEA00698CBB /* ObjectiveCApp */ = {
 			isa = PBXGroup;
 			children = (
+				D50EAA9C25494BEE00698CBB /* Info.plist */,
+				222DB73B254E9E9E00F7F7DF /* Utils */,
+				222DB73A254E9E7D00F7F7DF /* Managers */,
+				222DB739254E9E4F00F7F7DF /* DiffableSections */,
+				222DB738254E9E4800F7F7DF /* Models */,
+				222DB737254E9E3E00F7F7DF /* ViewControllers */,
 				D50EAAC52549A86700698CBB /* Views */,
-				D50EAA8B25494BEA00698CBB /* AppDelegate.h */,
-				D50EAA8C25494BEA00698CBB /* AppDelegate.m */,
-				D50EAA8E25494BEA00698CBB /* SceneDelegate.h */,
-				D50EAA8F25494BEA00698CBB /* SceneDelegate.m */,
-				D50EAA9125494BEA00698CBB /* ViewController.h */,
-				D50EAA9225494BEA00698CBB /* ViewController.m */,
 				D50EAA9725494BEE00698CBB /* Assets.xcassets */,
 				D50EAA9925494BEE00698CBB /* LaunchScreen.storyboard */,
-				D50EAA9C25494BEE00698CBB /* Info.plist */,
 				D50EAA9D25494BEE00698CBB /* main.m */,
-				D50EAACB254A52FB00698CBB /* List.h */,
-				D50EAACC254A52FB00698CBB /* List.m */,
-				D50EAAD0254A725200698CBB /* ListCollectionViewController.h */,
-				D50EAAD1254A725200698CBB /* ListCollectionViewController.m */,
-				D58F583A254D847500C91760 /* NetworkManager.h */,
-				D58F583B254D847500C91760 /* NetworkManager.m */,
-				222DB734254E8FCC00F7F7DF /* Section.h */,
-				222DB735254E8FCC00F7F7DF /* Section.m */,
 			);
 			path = ObjectiveCApp;
 			sourceTree = "<group>";
